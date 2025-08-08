@@ -1,0 +1,14 @@
+{
+  "manifest_version":3,
+  "name": "AI Summary for Articles",
+  "version" : 1.0,
+  "permissions" : ["scripting", "activeTabe", "storage"],
+  "action" : {
+    "default_popup" : "popup.html",
+    "default_icon" : "image.png"
+  },
+  "content_scripts" : [{
+    "matches" : ["<all_urls>"],
+    "js" : ["content.js"]
+  }]
+}
